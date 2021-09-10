@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %>
+</head>
+<body class="container">
+
+<header>
+    <%- include('../partials/header'); %>
+</header>
+
+<main>
+    <div class="jumbotron">
+        <h2>Introducir valores de la operación</h2>
+        <br>
+        <form id="formulario" action="/accion" method="POST"> <!-- method="POST" -->
+            <p><b>id: </b></p>
+            <input type="text" name="id" value="<%=id %>" required>
+            <br>
+            <p><b>Accion: </b></p>
+            <select name="accion">
+                <option value="+">Sumar</option>
+                <option value="-">Restar</option>
+                <option value="*">Multiplicar</option>
+                <option value="/">Dividir</option>
+                <option value="R">Resetear</option>
+            </select>
+            <br>
+            <p><b>Numero: </b></p>
+            <input type="number" name="numero" placeholder="0" required>
+            <br><br>
+            <button type="submit" class="boton">Enviar</button>
+            <button type="reset" class="boton">Reset</button>
+            
+        </form>
+    </div>
+</main>
+
+<footer>
+    <%- include('../partials/footer'); %>
+</footer>
+
+</body>
+</html>

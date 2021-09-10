@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %>
+</head>
+<body class="container">
+
+<header>
+    <%- include('../partials/header'); %>
+</header>
+
+<a href="/?id=<%=id %>">Ejecutar otra operación</a>
+ 
+<div class="jumbotron">
+    <h1>Resultado de la operación</h1>
+</div>
+
+<p>Ultima operación: --> <%=accion %> <%=numero %></p>
+<br>
+<p>Valor resultante: --> <%=resultado %> </p>
+<br>
+<p>Operaciones realizadas: --> <%=dato %></p>
+<footer>
+    <%- include('../partials/footer'); %>
+</footer>
+</body>
